@@ -1,0 +1,30 @@
+{
+  "name": "blog.youyo.io",
+  "version": "1.0.0",
+  "description": "blog.youyo.io",
+  "author": "youyo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --spa",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/markdownit": "^1.2.4",
+    "@nuxtjs/sitemap": "^1.0.0",
+    "contentful": "^7.5.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "ts-node": "^8.1.0",
+    "vuetify": "^1.5.5",
+    "vuetify-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.6.2",
+    "nodemon": "^1.18.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
