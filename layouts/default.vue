@@ -29,30 +29,41 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="white" light fixed app card hover>
-      <v-card flat ripple nuxt to="/">
-        <v-card-title class="font-weight-medium title">blog.youyo.io</v-card-title>
-      </v-card>
-      <v-spacer/>
-      <v-card flat width="40%">
-        <v-text-field
-          label="Search"
-          clearable
-          fixed
-          flat
-          single-line
-          color="black"
-          hint="'Search' is not working"
-        ></v-text-field>
-      </v-card>
-      <v-spacer/>
-      <v-toolbar-side-icon @click="drawer = !drawer"/>
+    <v-toolbar color="white" light fixed app card hover height="70%" class="ma-0 pa-0">
+      <v-container fluid ma-0 pa-0>
+        <v-layout align-center justify-space-between>
+          <v-flex xs5 sm3 md2>
+            <v-card flat height="100%" nuxt to="/">
+              <v-card-title class="font-weight-medium title pa-1 ma-0">blog.youyo.io</v-card-title>
+            </v-card>
+          </v-flex>
+          <v-flex xs5 sm6 offset-sm1>
+            <v-card flat width="100%" height="100%">
+              <v-text-field
+                class="ma-0 pt-3"
+                label="Search"
+                clearable
+                fixed
+                flat
+                single-line
+                color="black"
+                hint="'Search' is not working"
+              ></v-text-field>
+            </v-card>
+          </v-flex>
+          <v-flex xs1 offset-sm0 offset-md2>
+            <v-toolbar-side-icon class="ma-1" @click="drawer = !drawer"/>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </v-toolbar>
     <v-content>
       <nuxt/>
     </v-content>
-    <v-footer app>
-      <span>&copy; 2019</span>
+    <v-footer color="white" light fixed app card hover>
+      <v-flex text-xs-center>
+        <span>&copy; 2019 youyo</span>
+      </v-flex>
     </v-footer>
   </v-app>
 </template>
