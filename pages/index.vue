@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
     <v-layout row wrap>
-      <v-flex xs12 sm6 md4 lg3 v-for="post in posts" v-bind:key="post.fields.slug">
+      <v-flex xs12 sm6 md4 lg3 xl2 v-for="post in posts" v-bind:key="post.fields.slug">
         <v-card
           height="100%"
           width="100%"
@@ -12,17 +12,17 @@
           nuxt
           v-bind:to="/posts/ + post.fields.slug"
         >
-          <!--          
+          <v-img v-bind:src="'https://' + post.fields.image.fields.file.url" aspect-ratio="1.5"></v-img>
           <v-card-title class="pb-0">
             <span class="grey-text">{{post.fields.release_date}}</span>
           </v-card-title>
           <v-flex justify-center text-xs-center>
             <v-card-text
               justify-center
-              class="title font-weight-bold mb-0 px-3 pb-0"
+              class="title font-weight-bold mb-1 px-3 pb-1"
             >{{post.fields.title}}</v-card-text>
           </v-flex>
-          -->
+          <!--
           <v-flex text-xs-center>
             <v-card-text class="title font-weight-bold mb-4 px-4 pb-0">{{post.fields.title}}</v-card-text>
           </v-flex>
@@ -49,6 +49,7 @@
               </v-flex>
             </v-layout>
           </v-container>
+          -->
         </v-card>
       </v-flex>
     </v-layout>
