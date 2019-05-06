@@ -33,7 +33,7 @@
       <v-container fluid ma-0 pa-0>
         <v-layout align-center justify-space-between>
           <v-card flat height="100%" nuxt to="/">
-            <v-card-title class="font-weight-medium title pa-1 ma-0">blog.youyo.io</v-card-title>
+            <v-card-title class="font-weight-bold title pa-1 ma-0">blog.youyo.io</v-card-title>
           </v-card>
           <v-spacer/>
           <v-card flat width="40%" height="100%">
@@ -53,13 +53,17 @@
         </v-layout>
       </v-container>
     </v-toolbar>
-    <v-divider/>
+    <v-divider></v-divider>
     <v-content>
       <nuxt/>
     </v-content>
-    <v-footer color="white" light fixed app card hover>
+    <v-divider></v-divider>
+    <v-footer class="grey darken-4" dark fixed app absolute>
       <v-flex text-xs-center>
-        <span>&copy; 2019 youyo</span>
+        <span>
+          &copy; 2019
+          <strong>youyo</strong>
+        </span>
       </v-flex>
     </v-footer>
   </v-app>
@@ -74,3 +78,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.application {
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Kaku Gothic Pro",
+    "Yu Gothic", "Meiryo", "sans-serif";
+  line-height: 1.6;
+  text-align: justify;
+}
+</style>
