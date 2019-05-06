@@ -29,7 +29,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="white" light fixed app card hover height="70%" class="ma-0 pa-0">
+    <v-toolbar color="white" light fixed app card hover absolute height="70%" class="ma-0 pa-0">
       <v-container fluid ma-0 pa-0>
         <v-layout align-center justify-space-between>
           <v-card flat height="100%" nuxt to="/">
