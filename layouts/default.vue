@@ -7,6 +7,12 @@
             <v-card-title class="text-uppercase font-weight-thin">top</v-card-title>
           </v-card>
         </v-list-tile>
+        <!--
+        <v-list-tile>
+          <v-card flat ripple width="100%" nuxt to="/posts">
+            <v-card-title class="text-uppercase font-weight-thin">posts</v-card-title>
+          </v-card>
+        </v-list-tile>
         <v-list-tile>
           <v-card flat ripple width="100%" nuxt to="/tags">
             <v-card-title class="text-uppercase font-weight-thin">tags</v-card-title>
@@ -17,6 +23,7 @@
             <v-card-title class="text-uppercase font-weight-thin">about</v-card-title>
           </v-card>
         </v-list-tile>
+        -->
         <v-list-tile>
           <v-card flat ripple width="100%" href="https://blog.youyo.info/">
             <v-card-title class="text-uppercase font-weight-thin">old blog</v-card-title>
