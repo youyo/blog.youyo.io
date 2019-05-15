@@ -2,7 +2,7 @@
   <v-container grid-list-xs>
     <v-layout justify-center row wrap>
       <v-flex xs11 md10 text-xs-center>
-        <span class="display-1 font-weight-bold">{{post.fields.title}}</span>
+        <span class="headline font-weight-bold">{{post.fields.title}}</span>
       </v-flex>
       <v-flex xs12 class="my-4">
         <hr>
