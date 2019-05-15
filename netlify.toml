@@ -1,8 +1,15 @@
 [build]
-Command = "yarn generate"
+command = "yarn generate"
 publish = "dist"
 
 [context.production]
 [context.production.environment]
+CTF_SPACE_ID="o42cll050rts"
+CTF_DELIVERY_ACCESS_TOKEN="6679a0dbb3bb6355a0c7119f97e3b8af55f80cd3ae8e07509bdd2491be5b3e16"
+
+[context.deploy-preview]
+command = "yarn build"
+
+[context.deploy-preview.environment]
 CTF_SPACE_ID="o42cll050rts"
 CTF_DELIVERY_ACCESS_TOKEN="6679a0dbb3bb6355a0c7119f97e3b8af55f80cd3ae8e07509bdd2491be5b3e16"
