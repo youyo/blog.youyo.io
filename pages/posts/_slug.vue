@@ -43,7 +43,7 @@
 }
 .my-link-line {
   font-size: 2.5em;
-  color: #228b22;
+  color: #3cb371;
 }
 .my-link-general {
   font-size: 2.1em;
