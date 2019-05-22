@@ -1,13 +1,13 @@
 <template>
   <v-container grid-list-xs>
     <v-layout justify-center row wrap>
-      <v-flex xs11 md10 text-xs-center>
+      <v-flex xs9 md8 text-xs-center>
         <span class="headline font-weight-bold">{{post.fields.title}}</span>
       </v-flex>
-      <v-flex xs12 class="my-4">
+      <v-flex xs12 sm11 md9 class="my-4">
         <hr>
       </v-flex>
-      <v-flex xs12 sm11 md9 class="mt-2 mb-5" subheading>
+      <v-flex xs12 sm10 md8 class="mt-2 mb-5" subheading>
         <div v-html="$md.render(post.fields.body)"></div>
       </v-flex>
       <v-container>
