@@ -30,6 +30,11 @@
           </v-card>
         </v-list-tile>
         <v-list-tile>
+          <v-card flat ripple width="100%" nuxt to="/privacy-policy">
+            <v-card-title class="text-uppercase font-weight-thin">privacy policy</v-card-title>
+          </v-card>
+        </v-list-tile>
+        <v-list-tile>
           <v-card flat ripple width="100%" href="/sitemap.xml">
             <v-card-title class="text-uppercase font-weight-thin">sitemap</v-card-title>
           </v-card>
