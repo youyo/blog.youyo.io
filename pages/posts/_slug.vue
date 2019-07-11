@@ -7,7 +7,7 @@
       <v-flex xs12 sm11 md9 class="mt-4">
         <hr />
       </v-flex>
-      <v-flex xs12 sm10 md8 class="mt-2 mb-5" subheading>
+      <v-flex xs12 sm10 md8 class="mt-2 mb-5">
         <div class="mystyle">
           <div v-html="$md.render(post.fields.body)"></div>
         </div>
@@ -51,9 +51,24 @@
   font-size: 2.1em;
   color: gray;
 }
+.mystyle /deep/ h1 {
+  line-height: 1.8;
+  border-bottom: solid 1.3px black;
+  margin: 40px 0px 20px 10px;
+}
 .mystyle /deep/ h2 {
-  line-height: 3;
-  margin: 20px 0px 0px 0px;
+  line-height: 1.8;
+  border-bottom: solid 1.3px black;
+  margin: 40px 0px 20px 10px;
+}
+.mystyle /deep/ h3 {
+  line-height: 1.8;
+  border-bottom: solid 1.3px black;
+  margin: 40px 0px 20px 10px;
+}
+.mystyle /deep/ ul {
+  line-height: 1.8;
+  margin: 0px 0px 20px 0px;
 }
 .mystyle /deep/ li {
   line-height: 1.8;
