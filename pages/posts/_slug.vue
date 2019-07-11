@@ -66,6 +66,10 @@
   border-bottom: solid 1.3px black;
   margin: 40px 0px 20px 10px;
 }
+.mystyle /deep/ ol {
+  line-height: 1.8;
+  margin: 0px 0px 20px 0px;
+}
 .mystyle /deep/ ul {
   line-height: 1.8;
   margin: 0px 0px 20px 0px;
