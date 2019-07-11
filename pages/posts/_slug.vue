@@ -4,11 +4,13 @@
       <v-flex xs9 md8 text-xs-center>
         <span class="headline font-weight-bold">{{post.fields.title}}</span>
       </v-flex>
-      <v-flex xs12 sm11 md9 class="my-4">
-        <hr>
+      <v-flex xs12 sm11 md9 class="mt-4">
+        <hr />
       </v-flex>
       <v-flex xs12 sm10 md8 class="mt-2 mb-5" subheading>
-        <div v-html="$md.render(post.fields.body)"></div>
+        <div class="mystyle">
+          <div v-html="$md.render(post.fields.body)"></div>
+        </div>
       </v-flex>
       <v-container>
         <v-layout align-end>
@@ -49,6 +51,16 @@
   font-size: 2.1em;
   color: gray;
 }
+.mystyle /deep/ h2 {
+  line-height: 3;
+  margin: 20px 0px 0px 0px;
+}
+.mystyle /deep/ li {
+  line-height: 1.8;
+}
+.mystyle /deep/ p {
+  line-height: 1.8;
+}
 </style>
 
 <script lang="ts">
@@ -74,15 +86,9 @@ export default {
     return {
       post: post,
       snslink: {
-        twitter: `https://twitter.com/intent/tweet?url=https://blog.youyo.io/posts/${
-          post.fields.slug
-        }&text=${post.fields.title}`,
-        facebook: `https://www.facebook.com/share.php?u=https://blog.youyo.io/posts/${
-          post.fields.slug
-        }`,
-        line: `https://social-plugins.line.me/lineit/share?url=https://blog.youyo.io/posts/${
-          post.fields.slug
-        }&text=${post.fields.title}`
+        twitter: `https://twitter.com/intent/tweet?url=https://blog.youyo.io/posts/${post.fields.slug}&text=${post.fields.title}`,
+        facebook: `https://www.facebook.com/share.php?u=https://blog.youyo.io/posts/${post.fields.slug}`,
+        line: `https://social-plugins.line.me/lineit/share?url=https://blog.youyo.io/posts/${post.fields.slug}&text=${post.fields.title}`
       }
     };
   }
