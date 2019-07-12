@@ -4,6 +4,9 @@
       <v-flex xs9 md8 text-xs-center>
         <span class="headline font-weight-bold">{{post.fields.title}}</span>
       </v-flex>
+      <v-flex xs9 md8 text-xs-right>
+        <span class="font-weight-thin font-italic">{{post.fields.release_date}}</span>
+      </v-flex>
       <v-flex xs12 sm11 md9 class="mt-4">
         <hr />
       </v-flex>
