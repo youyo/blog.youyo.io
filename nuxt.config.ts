@@ -56,8 +56,14 @@ export default {
   },
 
   loading: { color: "#fff" },
-  css: ["~/assets/style/app.styl"],
-  plugins: ["@/plugins/vuetify", "~/plugins/contentful", "~/plugins/prism"],
+  css: [
+    "~/assets/style/app.styl",
+    {
+      src: "~/node_modules/highlight.js/styles/railscasts.css",
+      lang: "css"
+    }
+  ],
+  plugins: ["@/plugins/vuetify", "~/plugins/contentful"],
   modules: ["@nuxtjs/axios", "@nuxtjs/markdownit", "@nuxtjs/sitemap"],
 
   markdownit: {
@@ -66,7 +72,7 @@ export default {
     html: true,
     linkify: true,
     typography: true,
-    use: ["markdown-it-footnote"]
+    use: ["markdown-it-footnote", "markdown-it-highlightjs"]
   },
 
   sitemap: {

@@ -80,18 +80,29 @@
 .mystyle /deep/ p {
   line-height: 1.8;
 }
+.mystyle /deep/ pre {
+  margin: 0px 0px 20px 0px;
+}
+.mystyle /deep/ blockquote {
+  padding: 1px 0px 0px 5px;
+  border-left: 4px solid #555555;
+  background-color: #f3f2f2;
+  font-style: italic;
+}
+.mystyle /deep/ p /deep/ code {
+  background-color: #f5f5f5;
+  color: #c4370d;
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 </style>
 
 <script lang="ts">
-import Prism from "~/plugins/prism";
 import createClient from "~/plugins/contentful";
 
 const client = createClient();
 
 export default {
-  mounted() {
-    Prism.highlightAll();
-  },
   async asyncData({ params }) {
     const post = await client
       .getEntries({
