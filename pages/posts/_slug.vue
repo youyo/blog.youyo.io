@@ -80,8 +80,17 @@
 .mystyle /deep/ li {
   line-height: 1.8;
 }
+.mystyle /deep/ li /deep/ code {
+  background-color: #f5f5f5;
+  color: #000000;
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 .mystyle /deep/ p {
   line-height: 1.8;
+}
+.mystyle /deep/ a {
+  color: #000000;
 }
 .mystyle /deep/ pre {
   margin: 0px 0px 20px 0px;
@@ -94,9 +103,14 @@
 }
 .mystyle /deep/ p /deep/ code {
   background-color: #f5f5f5;
-  color: #c4370d;
+  color: #000000;
   box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.mystyle /deep/ p /deep/ img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0px 20px 0px;
 }
 </style>
 
