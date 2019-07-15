@@ -64,7 +64,12 @@ export default {
     }
   ],
   plugins: ["@/plugins/vuetify", "~/plugins/contentful"],
-  modules: ["@nuxtjs/axios", "@nuxtjs/markdownit", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/markdownit",
+    "@nuxtjs/sitemap",
+    ["@nuxtjs/google-analytics", { id: "UA-37862128-8" }]
+  ],
 
   markdownit: {
     injected: true,
