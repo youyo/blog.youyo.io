@@ -58,16 +58,34 @@
   line-height: 1.8;
   border-bottom: solid 1.3px black;
   margin: 40px 0px 20px 10px;
+  code {
+    background-color: #f5f5f5;
+    color: #000000;
+    box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 }
 .mystyle /deep/ h2 {
   line-height: 1.8;
   border-bottom: solid 1.3px black;
   margin: 40px 0px 20px 10px;
+  code {
+    background-color: #f5f5f5;
+    color: #000000;
+    box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 }
 .mystyle /deep/ h3 {
   line-height: 1.8;
   border-bottom: solid 1.3px black;
   margin: 40px 0px 20px 10px;
+  code {
+    background-color: #f5f5f5;
+    color: #000000;
+    box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
 }
 .mystyle /deep/ ol {
   line-height: 1.8;
