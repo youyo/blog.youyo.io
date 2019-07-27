@@ -11,14 +11,14 @@ const generateDynamicRoutes = function() {
     })
     .then(entries => {
       return entries.items.map(content => {
-        return "/posts/" + content.fields.slug;
+        return "/posts/" + content.fields.slug + "/";
       });
     })
     .catch(console.error);
 };
 
 export default {
-  mode: "spa",
+  mode: "universal",
 
   env: {
     CTF_SPACE_ID: process.env.CTF_SPACE_ID || "",

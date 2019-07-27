@@ -1,7 +1,14 @@
 <template>
   <v-container fill-height fluid class="ma-0 pa-0">
     <v-layout row wrap>
-      <v-flex align-space-around xs12 sm6 md4 v-for="post in posts" v-bind:key="post.fields.slug">
+      <v-flex
+        align-space-around
+        xs12
+        sm6
+        md4
+        v-for="post in $store.state.posts"
+        v-bind:key="post.fields.slug"
+      >
         <v-card
           height="100%"
           width="100%"
@@ -10,8 +17,7 @@
           outlined
           align-center
           justify-center
-          nuxt
-          v-bind:to="/posts/ + post.fields.slug"
+          v-bind:href="'/posts/' + post.fields.slug + '/'"
         >
           <v-container fill-height fluid class="ma-0 pa-5">
             <v-layout text-xs-center align-center justify-center wrap>
@@ -24,25 +30,8 @@
   </v-container>
 </template>
 
+
 <script lang="ts">
-import createClient from "~/plugins/contentful";
-
-const client = createClient();
-
-export default {
-  asyncData() {
-    return client
-      .getEntries({
-        content_type: "posts",
-        order: "-fields.release_date",
-        limit: 9
-      })
-      .then(entries => {
-        return { posts: entries.items };
-      })
-      .catch(console.error);
-  }
-};
 </script>
 
 <style scoped>

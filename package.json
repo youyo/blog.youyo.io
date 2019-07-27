@@ -5,10 +5,10 @@
   "author": "youyo",
   "private": true,
   "scripts": {
-    "dev": "nuxt --spa",
+    "dev": "nuxt --universal",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate --universal"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
