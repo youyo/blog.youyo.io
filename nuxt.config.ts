@@ -31,7 +31,7 @@ export default {
 
   head: {
     title: pkg.name,
-    htmlAttrs: { prefix: "og: http://ogp.me/ns#" },
+    htmlAttrs: { prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
