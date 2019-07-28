@@ -31,10 +31,41 @@ export default {
 
   head: {
     title: pkg.name,
+    htmlAttrs: { prefix: "og: http://ogp.me/ns#" },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: pkg.description }
+      { hid: "description", name: "description", content: pkg.description },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "blog.youyo.io"
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://blog.youyo.io" },
+      { hid: "og:title", property: "og:title", content: "blog.youyo.io" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "blog.youyo.io"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://picsum.photos/1200/630"
+      },
+      {
+        name: "twitter:card",
+        content: "summary"
+      },
+      {
+        name: "twitter:site",
+        content: "@youyo_"
+      },
+      {
+        name: "fb:app_id",
+        content: "1064948807037236"
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
