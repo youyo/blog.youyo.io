@@ -55,15 +55,18 @@ export default {
         content: "https://picsum.photos/1200/630"
       },
       {
-        name: "twitter:card",
+        hid: "twitter:card",
+        property: "twitter:card",
         content: "summary"
       },
       {
-        name: "twitter:site",
+        hid: "twitter:site",
+        property: "twitter:site",
         content: "@youyo_"
       },
       {
-        name: "fb:app_id",
+        hid: "fb:app_id",
+        property: "fb:app_id",
         content: "1064948807037236"
       }
     ],
