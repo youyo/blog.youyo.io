@@ -2,9 +2,6 @@
 command = "yarn generate"
 publish = "dist"
 
-[build.environment]
-NODE_VERSION = "12.7.0"
-
 [context.production]
 [context.production.environment]
 CTF_SPACE_ID="o42cll050rts"
