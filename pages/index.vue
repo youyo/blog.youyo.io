@@ -32,6 +32,14 @@
 
 
 <script lang="ts">
+export default {
+  head() {
+    return {
+      titleTemplate: null,
+      title: "blog.youyo.io"
+    };
+  }
+};
 </script>
 
 <style scoped>

@@ -133,4 +133,40 @@
 </style>
 
 <script lang="ts">
+export default {
+  head() {
+    const title = this["$store"].state.post.fields.title;
+    const url =
+      "https://blog.youyo.io/posts/" +
+      this["$store"].state.post.fields.slug +
+      "/";
+
+    return {
+      title: title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: title
+        },
+        { hid: "og:type", property: "og:type", content: "article" },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: title
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: title
+        },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: url
+        }
+      ]
+    };
+  }
+};
 </script>
