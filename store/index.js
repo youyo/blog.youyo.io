@@ -19,10 +19,11 @@ export const mutations = {
 };
 
 export const actions = {
-  async nuxtServerInit({ commit, dispatch }, { params, req }) {
+  async nuxtServerInit({ commit, dispatch }, { params, route }) {
+    console.log(route.path);
     if (params.slug) {
       await dispatch("fetchPost", params.slug);
-    } else if (req.url == "/posts/" || req.url == "/posts") {
+    } else if (route.path == "/posts/" || route.path == "/posts") {
       await dispatch("fetchListPosts");
     } else {
       await dispatch("fetchPosts");
