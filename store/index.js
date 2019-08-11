@@ -19,9 +19,11 @@ export const mutations = {
 };
 
 export const actions = {
-  async nuxtServerInit({ commit, dispatch }, { params }) {
+  async nuxtServerInit({ commit, dispatch }, { params, req }) {
     if (params.slug) {
       await dispatch("fetchPost", params.slug);
+    } else if (req.url == "/posts/" || req.url == "/posts") {
+      await dispatch("fetchListPosts");
     } else {
       await dispatch("fetchPosts");
     }
@@ -34,6 +36,20 @@ export const actions = {
         content_type: "posts",
         order: "-fields.release_date",
         limit: 9
+      })
+      .then(entries => {
+        return entries.items;
+      })
+      .catch(console.error);
+    commit("setPosts", posts);
+  },
+
+  async fetchListPosts({ commit }) {
+    const client = createClient();
+    const posts = await client
+      .getEntries({
+        content_type: "posts",
+        order: "-fields.release_date"
       })
       .then(entries => {
         return entries.items;
