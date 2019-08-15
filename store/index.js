@@ -73,13 +73,13 @@ export const actions = {
     commit("setSnslink", {
       twitter: `https://twitter.com/intent/tweet?url=https://blog.youyo.io/posts/${
         post.fields.slug
-      }&text=${post.fields.title}`,
+      }/&text=${post.fields.title}`,
       facebook: `https://www.facebook.com/share.php?u=https://blog.youyo.io/posts/${
         post.fields.slug
-      }`,
+      }/`,
       line: `https://social-plugins.line.me/lineit/share?url=https://blog.youyo.io/posts/${
         post.fields.slug
-      }&text=${post.fields.title}`
+      }/&text=${post.fields.title}`
     });
   }
 };
