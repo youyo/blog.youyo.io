@@ -87,6 +87,9 @@
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
 }
+.mystyle /deep/ hr {
+  margin: 40px 0px 40px 0px;
+}
 .mystyle /deep/ ol {
   line-height: 1.8;
   margin: 0px 0px 20px 0px;
