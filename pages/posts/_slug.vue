@@ -139,6 +139,7 @@
 export default {
   head() {
     const title = this["$store"].state.post.fields.title;
+    const body = this["$store"].state.post.fields.body;
     const url =
       "https://blog.youyo.io/posts/" +
       this["$store"].state.post.fields.slug +
@@ -150,7 +151,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: title
+          content: body
         },
         { hid: "og:type", property: "og:type", content: "article" },
         {
@@ -161,7 +162,7 @@ export default {
         {
           hid: "og:description",
           property: "og:description",
-          content: title
+          content: body
         },
         {
           hid: "og:url",
