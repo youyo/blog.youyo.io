@@ -48,6 +48,7 @@
             <v-card-title class="font-weight-bold title pa-1 ma-0">blog.youyo.io</v-card-title>
           </v-card>
           <v-spacer />
+          <!--
           <v-card flat width="40%" height="100%">
             <v-text-field
               class="ma-0 pt-3"
@@ -61,6 +62,7 @@
             ></v-text-field>
           </v-card>
           <v-spacer />
+          -->
           <v-toolbar-side-icon class="ma-1" @click="drawer = !drawer" />
         </v-layout>
       </v-container>
